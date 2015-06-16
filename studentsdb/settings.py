@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -80,8 +79,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, '..', 'db.sqlite3'),
     }
 }
-
-
 
 
 # Internationalization
