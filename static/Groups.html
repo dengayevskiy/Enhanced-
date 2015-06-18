@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Сервіс Обліку Студентів - Навчальні групи</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" value="Система Обліку Студентів Навчального Закладу"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- Start Container -->
+        <div class="container">
+            <!--Start Header -->
+            <div class="row" id="header">
+                <!--Logo -->
+                <div class="col-xs-8">
+                    <h1>Сервіс обліку студентів</h1>
+                </div>
+                <!-- Groups Selector -->
+                <div class="col-xs-4" id="group-selector">
+                    <p class="group">Група:</p>
+                    <label>
+                        <select class="form-control">
+                            <option value="">Усі Студенти</option>
+                            <option value="">МтМ - 21, Подоба Віталій (№ 254)</option>
+                            <option value="">МтМ - 22, Корост Андрій (№ 2123)</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <!--End Header -->
+
+            <!-- Start SubHeader -->
+            <div class="row" id="subheader">
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation"><a href="#">Студенти</a></li>
+                        <li role="presentation"><a href="#">Відвідування</a></li>
+                        <li role="presentation" class="active"><a href="#">Групи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End SubHeader -->
+
+            <!-- Start Main Page Content -->
+            <div class="row" id="content-columns">
+                <div class="col-xs-12" id="content-column">
+
+                    <!-- Status Message -->
+                    <div class="alert alert-warning">Зміни скасовано</div>
+
+                    <h2 id="groups_h2">Групи</h2>
+
+                    <!-- Add Student Button -->
+                    <a class="btn btn-primary" href="#">Додати групу</a>
+
+                    <div>
+                        <!-- Students table -->
+                        <table class="table table-hover table-striped table-responsive">
+                            <thead>
+                            <tr>
+                                <th><a href="">№</a></th>
+
+                                <th><a href="">Назва &uarr;</a></th>
+                                <th><a href="#">Староста</a></th>
+                                <th>Дії</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><a title="Редагувати" href="#">МіМ-21</a></td>
+                                <td><a title="Редагувати" href="#">Михайло Саакашвілі</a></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Дія
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Редагувати</a></li>
+                                            <li><a href="#">Видалити</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a title="Редагувати" href="#">МіМ-22</a></td>
+                                <td><a title="Редагувати" href="#">Теодор Рузвельт</a></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Дія
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Редагувати</a></li>
+                                            <li><a href="#">Видалити</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a title="Редагувати" href="#">МіМ-23</a></td>
+                                <td><a title="Редагувати" href="#">Владимир Путин</a></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Дія
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Редагувати</a></li>
+                                            <li><a href="#">Видалити</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!-- Pagination -->
+                        <nav>
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li class="active"><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- End Main Page Content -->
+
+            <!-- Start Footer -->
+            <div class="row" id="footer">
+                <div class="col-xs-12">
+                    &copy; 2015 Сервіс Обліку Студентів
+                </div>
+            </div>
+            <!-- End Footer -->
+        </div>
+        <!-- End Container -->
+
+        <!-- Javascripts Section -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    </body>
+</html>

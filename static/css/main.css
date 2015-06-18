@@ -10,8 +10,16 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
+#students_h2 {
     display: inline;
+}
+
+#groups_h2 {
+    display: inline;
+}
+
+#visit_h2 {
+    padding-top: 10px;
 }
 
 a.btn.btn-primary {
@@ -19,8 +27,24 @@ a.btn.btn-primary {
     margin-left: 10px;
 }
 
+p.group {
+    font-weight: bold;
+    font-size: large;
+    display: inline;
+}
+
 table {
     margin-top: 10px;
+}
+
+table#visit_table tr td {
+
+}
+
+table#visit_table tr td div.checkbox {
+    width: 10px;
+    margin: 0;
+    padding-left: 2px;
 }
 
 table.table tr td {
@@ -32,20 +56,37 @@ img {
 }
 
 #footer {
-    border-top: 1px solid #dddddd;
     padding-top: 10px;
+    border-top: 1px solid #dddddd;
+}
+
+.footer_visit {
+    margin-top: 10px;
 }
 
 #group-selector {
     margin-top: 30px;
 }
 
-#group-selector select {
+#group-selector select.form-control {
     margin: 0;
     width: 85%;
     background-color: #ffffff;
     border: 1px solid #cccccc;
-    height: 25px;
+    height: 30px;
     line-height: 30px;
     color: #555555;
+}
+
+th.day {
+    text-align: center;
+}
+
+#month {
+    font-weight: bold;
+    text-align: center;
+}
+
+#new_student_h1 {
+    text-align: center;
 }

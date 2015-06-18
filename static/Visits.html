@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Сервіс Обліку Студентів - Облік відвідування</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" value="Система Обліку Студентів Навчального Закладу"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- Start Container -->
+        <div class="container">
+
+            <!--Start Header -->
+            <div class="row" id="header">
+                <!--Logo -->
+                <div class="col-xs-8">
+                    <h1>Сервіс обліку студентів</h1>
+                </div>
+                <!-- Groups Selector -->
+                <div class="col-xs-4" id="group-selector">
+                    <p class="group">Група:</p>
+                    <label>
+                        <select class="form-control">
+                            <option value="">Усі Студенти</option>
+                            <option value="">МтМ - 21, Подоба Віталій (№ 254)</option>
+                            <option value="">МтМ - 22, Корост Андрій (№ 2123)</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <!--End Header -->
+
+            <!-- Start SubHeader -->
+            <div class="row" id="subheader">
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation"><a href="#">Студенти</a></li>
+                        <li role="presentation" class="active"><a href="#">Відвідування</a></li>
+                        <li role="presentation"><a href="#">Групи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End SubHeader -->
+
+            <!-- Start Main Page Content -->
+            <div class="row" id="content-columns">
+                <div class="col-xs-12" id="content-column">
+
+                    <h2 id="visit_h2">Облік відвідування</h2>
+
+                    <div id="month"><a title="Назад" href="#">&leftarrow;</a> Червень 2015 <a title="Вперед"
+                                                                                              href="#">&rightarrow;</a>
+                    </div>
+                    <div>
+                        <!-- Students table -->
+                        <table class="table table-hover table-striped table-bordered table-responsive" id="visit_table">
+                            <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Студент</th>
+                                <th class="day">Пн 1</th>
+                                <th class="day">Вт 2</th>
+                                <th class="day">Ср 3</th>
+                                <th class="day">Чт 4</th>
+                                <th class="day">Пт 5</th>
+                                <th class="day">Сб 6</th>
+                                <th class="day">Нд 7</th>
+                                <th class="day">Пн 8</th>
+                                <th class="day">Вт 9</th>
+                                <th class="day">Ср 10</th>
+                                <th class="day">Чт 11</th>
+                                <th class="day">Пт 12</th>
+                                <th class="day">Сб 13</th>
+                                <th class="day">Нд 14</th>
+                                <th class="day">Пн 15</th>
+                                <th class="day">Вт 16</th>
+                                <th class="day">Ср 17</th>
+                                <th class="day">Чт 18</th>
+                                <th class="day">Пт 19</th>
+                                <th class="day">Сб 20</th>
+                                <th class="day">Нд 21</th>
+                                <th class="day">Пн 22</th>
+                                <th class="day">Вт 23</th>
+                                <th class="day">Ср 24</th>
+                                <th class="day">Чт 25</th>
+                                <th class="day">Пт 26</th>
+                                <th class="day">Сб 27</th>
+                                <th class="day">Нд 28</th>
+                                <th class="day">Пн 29</th>
+                                <th class="day">Вт 30</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><a title="Редагувати" href="#">Халк</a></td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a title="Редагувати" href="#">Капітан Америка</a></td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a title="Редагувати" href="#">Залізна Людина</a></td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- End Main Page Content -->
+
+            <!-- Start Footer -->
+            <div class="row footer_visit" id="footer">
+                <div class="col-xs-12">
+                    &copy; 2015 Сервіс Обліку Студентів
+                </div>
+            </div>
+            <!-- End Footer -->
+        </div>
+        <!-- End Container -->
+
+        <!-- Javascripts Section -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    </body>
+</html>
