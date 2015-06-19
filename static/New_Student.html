@@ -14,8 +14,99 @@
     <body>
         <!-- Start Container -->
         <div class="container">
-            <div class="col-xs-12">
-                <h1 id="new_student_h1">Форма редагування студента</h1>
+            <!-- Start Main Page Content -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 id="new_student_h1">Форма редагування студента</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-3 col-sm-offset-2 control-label" for="formFirstName">Ім'я*</label>
+
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" placeholder="Остап">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 col-sm-offset-2 control-label" for="form">По-батькові</label>
+
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" placeholder="Сулейманович">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 col-sm-offset-2 control-label" for="formSecondName">Прізвище*</label>
+
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" placeholder="Бендер">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 col-sm-offset-2 control-label" for="formCardID">Номер білету*</label>
+
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" placeholder="025-121">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 col-sm-offset-2 control-label" for="formBirthDate">Дата
+                            народження</label>
+
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" placeholder="19.06.1990">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 col-sm-offset-2 control-label" for="formPhoto">Фото</label>
+
+                        <div class="col-sm-3">
+                            <input class="btn btn-info btn-sm" type="submit" value="Вибрати">
+
+                            <div class="no_file"> Файл не вибрано</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 col-sm-offset-2 control-label" for="formGroup">Група</label>
+
+                        <div class="col-sm-3">
+                            <select class="form-control">
+                                <option value="">-</option>
+                                <option value="">МтМ - 21</option>
+                                <option value="">МтМ - 22</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 col-sm-offset-2 control-label" for="formNotes">Додаткові нотатки</label>
+
+                        <div class="col-sm-3">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="form-group">
+                            <label class="col-sm-3 col-sm-offset-2 control-label" for=""></label>
+
+                            <div class="col-sm-3">
+                                <input class="btn btn-success" type="submit" value="Зберегти">
+                                <input class="btn btn-link" type="submit" value="Скасувати">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
             </div>
         </div>
     </body>

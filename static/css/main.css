@@ -29,16 +29,12 @@ a.btn.btn-primary {
 
 p.group {
     font-weight: bold;
-    font-size: large;
+    font-size: 18px;
     display: inline;
 }
 
 table {
     margin-top: 10px;
-}
-
-table#visit_table tr td {
-
 }
 
 table#visit_table tr td div.checkbox {
@@ -90,3 +86,18 @@ th.day {
 #new_student_h1 {
     text-align: center;
 }
+
+div.no_file {
+    display: inline;
+    margin-left: 10px;
+}
+
+label.control-label {
+    vertical-align: middle;
+}
+
+div.form-group {
+    margin-top: 20px;
+}
+
+
