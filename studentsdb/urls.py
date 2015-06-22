@@ -28,5 +28,8 @@ urlpatterns = [
     url(r'^groups/', 'students.views.groups_list', name='groups'),
     url(r'^groups/add/$', 'students.views.groups_add', name='groups_add'),
     url(r'^groups/(?P<gid>\d+)/edit/$', 'students.views.groups_edit', name='groups_edit'),
-    url(r'^groups/(?P<gid>\d+)/delete$', 'students.views.groups_delete', name='groups_delete')
+    url(r'^groups/(?P<gid>\d+)/delete$', 'students.views.groups_delete', name='groups_delete'),
+
+    # Journal url
+    url(r'^journal/(?P<gid>\d+)/', 'students.views.journal', name='group_journal'),
 ]
