@@ -7,20 +7,20 @@ from django.shortcuts import render
 def students_list(request):
     students = (
         {'id': 1,
-         'first_name': u'Корост',
-         'last_name': u'Андрій',
-         'ticket': 235,
-         'image': 'img/me.jpeg'},
+         'first_name': u'Джек',
+         'last_name': u'Деніелс',
+         'ticket': 2135,
+         'image': 'img/1.jpg'},
         {'id': 2,
-         'first_name': u'Кот',
-         'last_name': u'Семен',
-         'ticket': 2123,
-         'image': 'img/piv.png'},
+         'first_name': u'Майкл',
+         'last_name': u'Джексон',
+         'ticket': 2136,
+         'image': 'img/2.jpg'},
         {'id': 3,
-         'first_name': u'Джордан',
-         'last_name': u'Майкл',
-         'ticket': 2125,
-         'image': 'img/piv.png'}
+         'first_name': u'Володимир',
+         'last_name': u'Путін',
+         'ticket': 2137,
+         'image': 'img/3.jpg'}
     )
     return render(request, 'students/students_list.html',
                   {'students': students})
