@@ -10,11 +10,7 @@ h1 {
     font-weight: bold;
 }
 
-#students_h2 {
-    display: inline;
-}
-
-#groups_h2 {
+div#content-column h2#h2 {
     display: inline;
 }
 
@@ -98,6 +94,10 @@ label.control-label {
 
 div.form-group {
     margin-top: 20px;
+}
+
+#subheader {
+    margin-top: 10px;
 }
 
 

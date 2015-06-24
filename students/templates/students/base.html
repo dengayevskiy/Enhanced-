@@ -4,7 +4,6 @@
 <html lang="uk">
 
     <head>
-        <title>Сервіс Обліку Студентів - База студентів</title>
         <meta charset="UTF-8"/>
         <title>Сервіс Обліку Студентів - {% block meta_title %}{% endblock meta_title %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +15,6 @@
     </head>
 
     <body>
-
         <!-- Start Container -->
         <div class="container">
             <!--Start Header -->
@@ -56,11 +54,9 @@
                 <div class="col-xs-12" id="content-column">
 
                     <!-- Status Message -->
-                    {% comment "Not used alert so far" %}
-                    <div class="alert alert-warning" role="alert">Status Update! </div>
-                     {% endcomment %}
+                    <div class="alert alert-warning" role="alert">Status Update!</div>
 
-                    <h2>{% block title %}{% endblock title %}</h2>
+                    <h2 id="h2">{% block title %}{% endblock title %}</h2>
                     {% block content %}{% endblock content %}
 
                 </div>
