@@ -41,13 +41,16 @@
             <div class="row" id="subheader">
                 <div class="col-xs-12">
                     <ul class="nav nav-tabs">
-                        <li role="presentation" {% if request.path == '/' %}class="active"{% endif %}>
+                    {% url 'home' as url %}
+                        <li role="presentation" {% ifequal request.path url %}class="active"{% endifequal %}>
                             <a href="{% url "home" %}">Студенти</a>
                         </li>
-                        <li role="presentation" {% if '/journal' in request.path %} class="active"{% endif %}>
+                    {% url 'group_journal' as url %}
+                        <li role="presentation" {% ifequal request.path url %} class="active"{% endifequal %}>
                             <a href="{% url "group_journal" %}">Відвідування</a>
                         </li>
-                        <li role="presentation" {% if '/groups' in request.path %} class="active"{% endif %}>
+                    {% url 'groups' as url %}
+                        <li role="presentation" {% ifequal request.path url %} class="active"{% endifequal %}>
                             <a href={% url "groups" %}>Групи</a>
                         </li>
                     </ul>
@@ -64,7 +67,10 @@
                     <div class="alert alert-warning" role="alert">Status Update!</div>
 
                     <h2 id="h2">{% block title %}{% endblock title %}</h2>
-                    {% block content %}{% endblock content %}
+
+                    {% block content %}
+
+                    {% endblock content %}
 
                 </div>
             </div>
