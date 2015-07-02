@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'dgaievskiy'
 
-from django.http import HttpResponse
 from django.shortcuts import render
-
 
 # Views for journal
 def students_journal(request):

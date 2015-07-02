@@ -8,70 +8,72 @@
 
 {% block content %}
 
-            <!-- Start Main Page Content -->
-            <div class="row" id="content-columns">
-                <div class="col-xs-12" id="content-column">
+    <!-- Start Main Page Content -->
+    <div class="row" id="content-columns">
+        <div class="col-xs-12" id="content-column">
 
-                    <div id="month"><a title="Назад" href="#">&leftarrow;</a> Червень 2015 <a title="Вперед"
-                                                                                              href="#">&rightarrow;</a>
-                    </div>
-                    <div>
-                        <!-- Students table -->
-                        <table class="table table-hover table-striped table-bordered table-responsive" id="visit_table">
-                            <thead>
-                            <tr>
-                                <th>№</th>
-                                <th>Студент</th>
-                                <th class="day">Пн 1</th>
-                                <th class="day">Вт 2</th>
-                                <th class="day">Ср 3</th>
-                                <th class="day">Чт 4</th>
-                                <th class="day">Пт 5</th>
-                                <th class="day">Сб 6</th>
-                                <th class="day">Нд 7</th>
-                                <th class="day">Пн 8</th>
-                                <th class="day">Вт 9</th>
-                                <th class="day">Ср 10</th>
-                                <th class="day">Чт 11</th>
-                                <th class="day">Пт 12</th>
-                                <th class="day">Сб 13</th>
-                                <th class="day">Нд 14</th>
-                                <th class="day">Пн 15</th>
-                                <th class="day">Вт 16</th>
-                                <th class="day">Ср 17</th>
-                                <th class="day">Чт 18</th>
-                                <th class="day">Пт 19</th>
-                                <th class="day">Сб 20</th>
-                                <th class="day">Нд 21</th>
-                                <th class="day">Пн 22</th>
-                                <th class="day">Вт 23</th>
-                                <th class="day">Ср 24</th>
-                                <th class="day">Чт 25</th>
-                                <th class="day">Пт 26</th>
-                                <th class="day">Сб 27</th>
-                                <th class="day">Нд 28</th>
-                                <th class="day">Пн 29</th>
-                                <th class="day">Вт 30</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {% for student in students_in_journal %}
-                            <tr>
-                                <td>{{ forloop.counter }}</td>
-                                <td><a title="Редагувати" href="#">{{ students_in_journal.name }}</a></td>
-                                <td>
-                                    <div class="checkbox">
-                                        <label class="checkbox-inline">
-                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
-                                        </label>
-                                    </div>
-                                </td>
-                            {% endfor %}
-                            <tbody>
-                        </table>
-                    </div>
-                </div>
+            <div id="month"><a title="Назад" href="#">&leftarrow;</a> Червень 2015 <a title="Вперед"
+                                                                                      href="#">&rightarrow;</a>
             </div>
-            <!-- End Main Page Content -->
+            <div>
+                <!-- Students table -->
+                <table class="table table-hover table-striped table-bordered table-responsive" id="visit_table">
+                    <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Студент</th>
+                        <th class="day">Пн 1</th>
+                        <th class="day">Вт 2</th>
+                        <th class="day">Ср 3</th>
+                        <th class="day">Чт 4</th>
+                        <th class="day">Пт 5</th>
+                        <th class="day">Сб 6</th>
+                        <th class="day">Нд 7</th>
+                        <th class="day">Пн 8</th>
+                        <th class="day">Вт 9</th>
+                        <th class="day">Ср 10</th>
+                        <th class="day">Чт 11</th>
+                        <th class="day">Пт 12</th>
+                        <th class="day">Сб 13</th>
+                        <th class="day">Нд 14</th>
+                        <th class="day">Пн 15</th>
+                        <th class="day">Вт 16</th>
+                        <th class="day">Ср 17</th>
+                        <th class="day">Чт 18</th>
+                        <th class="day">Пт 19</th>
+                        <th class="day">Сб 20</th>
+                        <th class="day">Нд 21</th>
+                        <th class="day">Пн 22</th>
+                        <th class="day">Вт 23</th>
+                        <th class="day">Ср 24</th>
+                        <th class="day">Чт 25</th>
+                        <th class="day">Пт 26</th>
+                        <th class="day">Сб 27</th>
+                        <th class="day">Нд 28</th>
+                        <th class="day">Пн 29</th>
+                        <th class="day">Вт 30</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for student in journal %}
+                        <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td><a title="Редагувати" href="#">{{ student.name }}</a></td>
+                        {% for i in "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" %}
+                            <td>
+                                <div class="checkbox">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                    </label>
+                                </div>
+                            </td>
+                        {% endfor %}
+                    {% endfor %}
+                    <tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Page Content -->
 
 {% endblock content %}
