@@ -8,7 +8,6 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from ..models import Student
 
 
-
 # Views for students
 def students_list(request):
     students = Student.objects.all()
