@@ -40,7 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'students'
+    'students',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -88,6 +88,7 @@ DATABASES = {
         'NAME': 'students_db',
     }
 }
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/

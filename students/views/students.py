@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 __author__ = 'dgaievskiy'
 
+import json
+
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -33,6 +35,17 @@ def students_list(request):
 
     return render(request, 'students/students_list.html',
                   {'students': students})
+
+
+def ajax_test(request):
+    results = {'success': False}
+
+    # Тут — потрібні нам алгоритми
+    if True:
+        results = {'success': True, 'param1': 'Loaded', 'param2': 'moreeee'}
+
+    json_data = json.dumps(results)
+    return HttpResponse(json_data)
 
 
 def students_add(request):

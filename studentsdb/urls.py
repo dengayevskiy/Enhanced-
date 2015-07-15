@@ -23,6 +23,7 @@ urlpatterns = patterns('students.views',
 
                        # Students url
                        url(r'^$', 'students.students_list', name='home'),
+                       url(r'^ajax_test/$', 'students.ajax_test', name='ajax'),
                        url(r'^students/add/$', 'students.students_add', name='students_add'),
                        url(r'^students/(?P<sid>\d+)/edit/$', 'students.students_edit',
                            name='students_edit'),
