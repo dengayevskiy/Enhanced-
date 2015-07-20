@@ -7,9 +7,14 @@ $(document).ready(function () {
     // Посилання з id="test" буде тригером події
     $("#load_more").click(function () {
         // AJAX-запит на потрібну адресу
-        $.get("/ajax_test/", function (data) {
-            // Замінюємо текст тегу з id="target" на отримані дані
-            $("#load_more").html(data.param1 + ' ' + data.param2);
+        $.ajax({
+            url: 'ajax/test.html',
+            success: function () {
+                alert('Load was performed.');
+            },
+            error: function () {
+                alert('Load was NOT performed.');
+            }
         });
     });
 });

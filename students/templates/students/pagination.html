@@ -1,5 +1,5 @@
 {% with order_by=request.GET.order_by reverse=request.GET.reverse %}
-    {% if students.has_other_pages %}
+    {% if students.page_number > 1 %}
         <nav>
             <ul class="pagination">
                 <li>
